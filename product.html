@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products- Myshop</title>
+    <link rel = "stylesheet" href = "./assets/css/style.css" />
+    <link 
+        rel = "stylesheet"
+        href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+</head>
+<body>
+
+    <div class = "products-header">
+        <div class = "container">
+            <h1 class = "page-little">Our Products</h1>
+            <p class = "page-description">
+                Discover our wide range of high-quality products at competitve
+                prices. Shop with confidence with our secure checkout and fast 
+                delivery.
+            </p>
+        </div>
+    </div>
+
+    <div class = "container">
+        <div class = "product-container">
+            <aside class = "sidebar">
+                <div class = "filter-widget">
+                    <div class = "filter-title">Categories</div>
+                    <div class = "filter-content">
+                        <ul class = "filter-option">
+                            <li class = "filter-option">
+                                <inpu type = "checkbox" id = "cat-electronics" checked />
+                                <label for = "cat-electronics"
+                                    >Electronics <span class = "filter-count">(24)</span></label
+                                >
+                            </li>
+                            <li class = "filter-option">
+                                <input type = "checkbox" id = "cat-fashion" checked />
+                                <label for = "cat-fashion"
+                                >Fashion <span class = "filter-count">(18)</span></label
+                            >
+                            </li>
+                            <li class = "filter-option">
+                                <input type = "checkbox" id = "cat-home" checked />
+                                <label for = "cat-home"
+                                    >Home & Living <span class = "filter-count">(15)</span></label
+                                >
+                            </li>
+                            <li class = "filter-option">
+                                <input type = "checkbox" id = "cat-beauty" checked />
+                                <label for = "cat-beauty"
+                                    >Beauty <span class = "filter-count">(12)</span></label
+                                >
+                            </li>
+                            <li class = "filter-option">
+                                <input type = "checkbox" id = "cat-sport" checked />
+                                <label for = "cat-sport"
+                                    >Sports & Outdoors
+                                    <span class = "filter-count">(9)</span></label
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class = "filter-widget">
+                    <div class = "filter-title">Price Range</div>
+                    <div class = "filter-count">
+                        <input
+                            type = "range"
+                            class = "price-range"
+                            min = "0"
+                            max = "1000"
+                            step = "10"
+                            value = "500"
+                        />
+                        <div class = "price-inputs">
+                            <input
+                                type = "number"
+                                class = "price-input"
+                                placeholder = "Min"
+                                value = "0"
+                            />
+                            <input 
+                                type = "number"
+                                class = "price-input"
+                                placeholder = "Max"
+                                value = "500"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "filter-widget">
+                    <div class = "filter-title">Brand</div>
+                    <div class = "filter-count">
+                        <ul class = "filter-option">
+                            <li class = "filter-option">
+                                <input type = "checkbox" id = "brand-apple" checked />
+                                <label for = "brand-apple"
+                                    >Apple <span class = "filter-count">(8)</span></label
+                                >
+                            </li>
+                            <li class = "filter-option">
+                                <input type = "checkbox" id = "brand-samsung" checked />
+                                <label for = "brand-samsung"
+                                    >Samsung <span class = "filter-count">(6)</span></label
+                                >
+                            </li>
+                            <li class = "filter-option">
+                                <input type = "checkbox" id = "brand-sony" checked />
+                                <label for = "brand-sony"
+                                    >Sony <span class = "filter-count">(5)</span></label
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class = "filter-widget">
+                    <div class = "filter-title">Customer Review</div>
+                    <div class = "filter-content">
+                        <ul class = "filter-option">
+                            <li class = "filter-option">
+                                <input type = "checkbox" id = "rating-5" checked />
+                                <label for = "rating-5">
+                                    <span class = "rating-stars">
+                                        <i class = "fas fa-star"></i>
+                                        <i class = "fas fa-star"></i>
+                                        <i class = "fas fa-star"></i>
+                                        <i class = "fas fa-star"></i>
+                                        <i class = "fas fa-star"></i>
+                                        <span class = "rating-count">& Up</span>
+                                    </span>
+                                </label>
+                            </li>
+                            <li class = "filter-option">
+                                <input type = "checkbox" id = "rating-4" checked />
+                                <label for = "rating-4">
+                                    <span class = "rating-stars">
+                                        <i class = "fas fa-star"></i>
+                                        <i class = "fas fa-star"></i>
+                                        <i class = "fas fa-star"></i>
+                                        <i class = "fas fa-star"></i>
+                                        <i class = "fas fa-star"></i>
+                                        <span class = "rating-count">& Up</span>
+                                    </span>
+                                </label>
+                            </li>
+                            <li class = "filter-option">
+                                <input type = "checkbox" id = "rating-3" checked />
+                                <label for = "rating-3">
+                                    <span class = "rating-stars">
+                                        <i class = "fas fa-star"></i>
+                                        <i class = "fas fa-star"></i>
+                                        <i class = "fas fa-star"></i>
+                                        <i class = "fas fa-star"></i>
+                                        <i class = "fas fa-star"></i>
+                                        <span class = "rating-count">& Up</span>
+                                    </span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <button class = "btn btn-block" style = "margin-top: 20px">
+                    Apply Filters
+                </button>
+                <button class = "btn btn-outline btn-block" style = "margin-top: 10px">
+                    Reset Filters
+                </button>
+            </aside>
+
+            <main class = "products-main">
+                <div class = "products-toolbar">
+                    <div class = "products-count">Showing 1-12 of 54 products</div>
+                    <div class = "sort-options">
+                        <span clas = "sort-label">Sort by:</span>
+                        <select class = "sort-select">
+                            <option>Featured</option>
+                            <option>Price: Low to High</option>
+                            <option>Price: High to Low</option>
+                            <option>Newest Arrivals</option>
+                            <option>Best Selling</option>
+                            <option>Customer Rating</option>
+                        </select>
+                        <div class = "view-options">
+                            <button class = "view-btn active" title = "Grid View">
+                                <i class = "fas fa-th"></i>
+                            </button>
+                            <button class = "view-btn" title = "List View">
+                                <i class = "fas fa-list"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "products-grid" id = "productsGrid">
+                    <div class = "product-card">
+                        <div class = "product-badge sale">Sale</div>
+                        <div class = "product-image">
+                            <img 
+                                src = "assets/images/image-1.avif"
+                                alt = "Premium Wireless Headphones"
+                            />
+                            <div class = "product-actions">
+                                <button class = "btn-icon" title = "Add to WishList">
+                                    <i class = "fas fa-heart"></i>
+                                </button>
+                                <button class = "btn-icon" title = "Quick View">
+                                    <i class = "fas fa-eye"></i>
+                                </button>
+                                <button class = "btn-icon" title = "Add to Compare">
+                                    <i class = "fas fa-exchanged-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class = "product-details">
+                            <span class = "product-category">Electronics</span>
+                            <h3 class = "product-title">Premium Wireless Headphones</h3>
+                            <div class = "product-rating">
+                                <i class = "fas fa-star"></i>
+                                <i class = "fas fa-star"></i>
+                                <i class = "fas fa-star"></i>
+                                <i class = "fas fa-star"></i>
+                                <i class = "fas fa-star-half-alt"></i>
+                                <span class = "rating-count">(142)</span>
+                            </div>
+                            <div class = "product-price">
+                                <span class = "current-price">$179.99</span>
+                                <span class = "original-price">$299.99</span>
+                            </div>
+                            <button class = "btn-add-to-cart" data-product-id ="1">
+                                <i class = "fas fa-shopping-cart"></i> Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    
+</body>
+</html>
